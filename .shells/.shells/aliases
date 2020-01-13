@@ -1,0 +1,61 @@
+# Apt
+alias upgrate='sudo apt-get update && sudo apt-get upgrade -y'
+alias cleanup='sudo apt-get autoremove -y && sudo apt-get autoclean'
+
+#Python
+if [ -x /usr/bin/python3.7 ]; then
+    alias python='/usr/bin/python3.7'
+fi
+
+# Find files
+alias search='sudo find / -name'
+
+# Cute shell shortcuts
+alias ls='ls --sort=extension --color=auto'
+alias ll='ls -lh'
+alias lal='ls -alh'
+alias la='ls -A'
+alias pms='sudo pm-suspend'
+alias psg='ps -A | grep'
+alias sn='sudo nano'
+alias n='nano'
+alias smi='sudo make install'
+alias l='ls -CF'
+alias listaliases='cat ~/.shells/aliases|less'
+alias listfunctions='cat ~/.shells/functions|less'
+
+# Cool colors for man pages
+alias man="TERMINFO=~/.terminfo TERM=mostlike LESS=C PAGER=less man"
+
+# Enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# This one is to take care of make
+# Give me a nice, distinguishable make output
+alias make='clear && make'
+alias m='make'
+
+# Some more, to avoid mistakes
+alias rm='rm -ir'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# Git Commands
+alias gpo='git push origin master'
+alias gp='git pull'
+alias gs='git status'
+alias gd='git diff'
+alias gr='git reflog'
+alias glf='git ls-files'
+alias ga='git add'
+
+# Quickly load bashrc
+alias gogo='source ~/.bashrc'
