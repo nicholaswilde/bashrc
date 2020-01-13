@@ -1,2 +1,2 @@
 # bashrc
-Simple but cute and helpful bash settings
+My bash settings
