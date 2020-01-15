@@ -78,14 +78,12 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo`, `twitter_handle`, `email`
+A copy of all of my bash settings.
 
 
 ### Built With
 
-* []()
+* [Raspbian Buster](https://www.raspbian.org/)
 * []()
 * []()
 
@@ -110,9 +108,9 @@ npm install npm@latest -g
 ```sh
 git clone https://github.com/nicholaswilde/bashrc.git
 ```
-2. Install NPM packages
+2. Install apt-get packages
 ```sh
-npm install
+sudo apt-get install p7zip-full unrar-free fortune-mod
 ```
 
 
