@@ -184,7 +184,7 @@ Project Link: [https://github.com/nicholaswilde/bashrc](https://github.com/nicho
 [issues-shield]: https://img.shields.io/github/issues/nicholaswilde/bashrc.svg?style=flat-square
 [issues-url]: https://github.com/nicholaswilde/bashrc/issues
 [license-shield]: https://img.shields.io/github/license/nicholaswilde/bashrc.svg?style=flat-square
-[license-url]: https://github.com/nicholaswilde/bashrc/blob/master/LICENSE.txt
+[license-url]: https://github.com/nicholaswilde/bashrc/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/nicholaswilde
 [product-screenshot]: images/screenshot.png
