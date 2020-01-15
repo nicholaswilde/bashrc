@@ -15,7 +15,6 @@ HISTFILESIZE=2000000
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 
-
 ############## GENERAL UI ################
 force_color_prompt=yes
 
@@ -36,10 +35,13 @@ if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
 fi
 
 # Enable programmable completion features
-if [ -f /etc/bash_completion ]; then
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
+  fi
 fi
-
 
 ############## INPUT ################
 
@@ -48,12 +50,10 @@ shopt -s cdspell
 #include dotfiles in wildcard expansion, and match case-insensitively
 shopt -s dotglob
 shopt -s nocaseglob
-
+# If set, the pattern "**" used in a pathname expansion context will
+# match all files and zero or more directories and subdirectories.
+#shopt -s globstar
 
 ############## SYSTEM ################
 
-export PATH=$PATH:/usr/games/
-
-
-
-
+#export PATH=$PATH:/usr/games/
