@@ -41,7 +41,7 @@
   <h3 align="center">bashrc</h3>
 
   <p align="center">
-    A Python command line based contact book as an intermediate exercise.
+    My bash settings.
     <br />
     <a href="https://github.com/nicholaswilde/bashrc/"><strong>Explore the docs »</strong></a>
     <br />
