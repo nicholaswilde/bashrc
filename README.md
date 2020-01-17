@@ -163,7 +163,7 @@ Project Link: [https://github.com/nicholaswilde/bashrc](https://github.com/nicho
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* [Icon](https://www.iconfinder.com/icons/2639797/card_contact_icon)
+* [Icon](https://www.iconfinder.com/icons/298878/terminal_icon)
 * []()
 * []()
 
