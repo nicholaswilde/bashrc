@@ -105,7 +105,7 @@ sudo apt-get install p7zip-full unrar-free fortune-mod
 
 1. Backup your .bashrc file
 ```sh
-cp ~/.bashrc ~/.bashrc_backup
+cp ~/.bashrc ~/.bashrc.bak
 ```
 2. Change to the home directory
 ```sh
@@ -144,8 +144,9 @@ rm ~/.bashrc
 ```
 3. Restore the backup
 ```sh
-cp ~/.bashrc_backup ~/.bashrc
+cp ~/.bashrc.bak ~/.bashrc
 ```
+> If a backup doesn't exist, you can always copy one from the skeleton file, `/etc/skel/.bashrc`
 4. Load the .bashrc file
 ```sh
 source ~/.bashrc
@@ -154,7 +155,22 @@ source ~/.bashrc
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+List the available functions
+```sh
+$ lf
+count
+ssd
+clone
+...
+```
 
+List the available aliases
+```sh
+$ alias
+alias ..='cd ..'
+alias apt-get='sudo apt-get'
+...
+```
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
