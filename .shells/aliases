@@ -1,7 +1,7 @@
 # Apt
-alias upgrate='sudo apt-get update && sudo apt-get upgrade -y'
+alias apt-get='sudo apt-get'
+alias upgrate='sudo apt-get update; sudo apt-get upgrade -y; sudo apt-get dist-upgrade'
 alias cleanup='sudo apt-get autoremove -y && sudo apt-get autoclean'
-alias show='apt-cache search'
 alias install='sudo apt-get install -y'
 alias remove='sudo apt-get remove'
 
@@ -24,6 +24,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias cd..='cd ..'
 alias ..='cd ..'
+alias back='cd "$OLDPWD"'
 
 # System
 alias pms='sudo pm-suspend'
@@ -41,7 +42,7 @@ alias sn='sudo nano'
 alias n='nano'
 
 # List our functions
-alias lf='cat ~/.shells/functions|less'
+alias lf='cat ~/.shells/functions|grep -o -P "(?<=function ).*(?=\(\))"'
 
 # Cool colors for man pages
 alias man="TERMINFO=~/.terminfo TERM=mostlike LESS=C PAGER=less man"
@@ -83,7 +84,7 @@ alias ga='git add'
 alias revert='git reset --hard'
 
 # Quickly load bashrc
-alias gogo='source ~/.bashrc'
+alias reload='source ~/.bashrc'
 
 # Color the output of cat
 alias catc='pygmentize -O style=friendly -g' # sudo apt-get install python3-pygments
