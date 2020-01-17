@@ -98,7 +98,7 @@ To get a local copy up and running follow these simple steps.
 These packages are needed for some aliases, functions, and welcome screen, but not required
 * apt-get
 ```sh
-sudo apt-get install p7zip-full unrar-free fortune-mod pydf
+sudo apt-get install p7zip-full unrar-free fortune-mod pydf python3-pygments
 ```
 
 ### Installation
