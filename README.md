@@ -84,8 +84,7 @@ A copy of all of my bash settings.
 ### Built With
 
 * [Raspbian Buster](https://www.raspbian.org/)
-* []()
-* []()
+* [Raspberry Pi 2 Model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/)
 
 
 
@@ -96,29 +95,66 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
-
-### Installation
- 
-1. Clone the repo
-```sh
-git clone https://github.com/nicholaswilde/bashrc.git
-```
-2. Install apt-get packages
+These packages are needed for some aliases, functions, and welcome screen, but not required
+* apt-get
 ```sh
 sudo apt-get install p7zip-full unrar-free fortune-mod
 ```
 
+### Installation
 
+1. Backup your .bashrc file
+```sh
+cp ~/.bashrc ~/.bashrc_backup
+```
+2. Change to the home directory
+```sh
+cd ~
+```
+3. Clone the repo
+```sh
+git clone https://github.com/nicholaswilde/bashrc.git
+```
+4. Change to the bashrc directory
+```sh
+cd bashrc
+```
+5. Copy the .bashrc to your home directory
+```sh
+cp .bashrc ~/.bashrc
+```
+6. Copy the shell scripts
+```sh
+cp .shells ~/.shells
+```
+7. Load the bash file
+```sh
+source ~/.bashrc
+```
+
+## Uninstall
+
+1. Remove the shell directory
+```sh
+rm -r ~/.shells
+```
+2. Remove the .bashrc file
+```sh
+rm ~/.bashrc
+```
+3. Restore the backup
+```sh
+cp ~/.bashrc_backup ~/.bashrc
+```
+4. Load the .bashrc file
+```sh
+source ~/.bashrc
+```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
