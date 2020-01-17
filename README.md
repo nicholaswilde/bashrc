@@ -64,6 +64,7 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
+  * [Uninstall](#uninstall)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
