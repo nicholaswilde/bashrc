@@ -4,6 +4,7 @@ alias upgrate='sudo apt-get update; sudo apt-get upgrade -y; sudo apt-get dist-u
 alias cleanup='sudo apt-get autoremove -y && sudo apt-get autoclean'
 alias install='sudo apt-get install -y'
 alias remove='sudo apt-get remove'
+alias purge='sudo apt-get remove --purge'
 
 #Python
 if [ -x /usr/bin/python3.7 ]; then
