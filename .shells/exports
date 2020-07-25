@@ -1,5 +1,6 @@
 #PATH
 export PATH=$HOME/.scripts:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$PATH:$HOME/go/bin
 export PATH="/usr/bin/berryconda2/bin:$PATH"
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
