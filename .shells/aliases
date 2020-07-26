@@ -99,6 +99,9 @@ if [ -x /usr/bin/geth ]; then
     alias checkbalance='geth --exec "web3.fromWei(eth.getBalance(eth.accounts[0]), '"'"'ether'"'"')" attach'
 fi
 
+#Openports
+alias openports='sudo lsof -i -P -n | grep LISTEN'
+
 # Misc 
 alias myip='curl http://ipecho.net/plain; echo'
 #alias mostused='history | awk \'{CMD[$2]++;count++;}END { for \(a in CMD\)print CMD[a] " " CMD[a]/count*100 "% " a;}\' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n10'
