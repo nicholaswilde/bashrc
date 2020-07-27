@@ -99,6 +99,13 @@ if [ -x /usr/bin/geth ]; then
     alias checkbalance='geth --exec "web3.fromWei(eth.getBalance(eth.accounts[0]), '"'"'ether'"'"')" attach'
 fi
 
+#boinc-client
+if [ -x /usr/bin/boinccmd ]; then
+    alias getstate='boinccmd --get_state'
+    alias gettasks='boinccmd --get_tasks'
+    alias getoldtasks='boinccmd --get_old_tasks'
+fi
+
 #Openports
 alias openports='sudo lsof -i -P -n | grep LISTEN'
 
